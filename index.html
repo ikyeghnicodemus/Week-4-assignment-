@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <div style="background-color: gold;"</div>
+    <!-- Form structure -->
+    <h1 
+    <div style="background-color: green;"</div> Student Registration Form</h1>
+    <form action="#" method="post">
+        
+        <!--Text inputs with labels -->
+        <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="first_name" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="last_name" placeholder="Enter your last name" required>
+        </div>
+
+        <!--Number input -->
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="99" placeholder="Enter age 10-99" required>
+            <!--Answer: If you type a letter, the browser won't accept it. It only allows numbers. 
+                 On submit, it will also block numbers outside 10-99 -->
+        </div>
+
+        <!--Email input -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <!--Without @, the browser shows "Please include an '@' in the email address" 
+                 and blocks the form from submitting. This is built-in browser validation -->
+        </div>
+
+        <!--Telephone input -->
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000">
+        </div>
+
+        <!--Password input -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" placeholder="Minimum 8 characters">
+            <!--Browser shows dots/stars instead of characters as you type -->
+        </div>
+
+        <!--Radio buttons — gender -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="options">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="none" name="gender" value="none">
+                <label for="none">Prefer not to say</label>
+            </div>
+            <!--Answer: Same 'name' attribute groups them together so only ONE can be selected at a time -->
+        </div>
+
+    <div style="background-color: grey;"</div>
+        <!-- Checkboxes — courses -->
+        <div class="form-group">
+            <label>Courses Interested In:</label>
+            <div class="options">
+                <input type="checkbox" id="web" name="courses" value="web_dev">
+                <label for="web">Web Development</label><br>
+
+                <input type="checkbox" id="data" name="courses" value="data_science">
+                <label for="data">Data Science</label><br>
+
+                <input type="checkbox" id="ui" name="courses" value="ui_ux">
+                <label for="ui">UI/UX Design</label><br>
+
+                <input type="checkbox" id="cyber" name="courses" value="cyber_sec">
+                <label for="cyber">Cyber Security</label>
+            </div>
+            <!--You can tick multiple boxes at once because checkboxes are independent -->
+        </div>
+
+        <!-- Submit and reset buttons -->
+        <div class="form-group">
+            <button type="submit">Register Now</button>
+            <button type="reset">Clear Form</button>
+            <!-- Submit tries to send data and triggers validation. Reset clears all fields -->
+        </div>
+
+    </form>
+
+    <!-- Required fields + reflection -->
+    <!-- Radio buttons allow only one option to be selected from a group, while checkboxes allow multiple options to be selected at the same time. -->    
+    
+    <div style="background-color: orange;"</div>
+<del>Nicodemus</del>
+<br>
+        <i>&copy; 2026 software development class</i>
+        <p>Contact: ikyeghnicodemus@gmail.com</p>
+</body>
+</html>
